@@ -1,5 +1,5 @@
 <launch>
     <node pkg="imu_2_pos" name="imu_node" type="imu_to_pos_node" output="screen"/>
-	<node pkg="rviz" name="rviz_hi226" type="rviz" args="-d /home/nvidia/test_imu/src/imu_test/rviz/imu.rviz"/>
+	<node pkg="rviz" name="rviz_hi226" type="rviz" args="-d $(find imu_2_pos)/rviz/imu.rviz"/>
 	<node pkg="openzen_sensor" name="openzen" type="openzen_sensor_node"/>
 </launch>
