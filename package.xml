@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>imu_test</name>
+  <name>imu_2_pos</name>
   <version>0.0.0</version>
   <description>The imu_test package</description>
 
