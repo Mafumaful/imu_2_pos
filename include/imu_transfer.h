@@ -101,7 +101,7 @@ ImuTransfer::ImuTransfer(const ros::NodeHandle &nh) : nh_(nh)
     position_[0] = 0;
     position_[1] = 0;
     position_[2] = 0;
-    imu_data_sub_ = nh_.subscribe("/IMU_data", 1, &ImuTransfer::imu_cb, this);
+    imu_data_sub_ = nh_.subscribe("/imu/data", 1, &ImuTransfer::imu_cb, this);
     velocity_[0] = 0;
     velocity_[1] = 0;
     velocity_[2] = 0;
