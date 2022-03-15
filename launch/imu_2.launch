@@ -1,5 +1,5 @@
 <launch>
-    <node pkg="imu_test" name="imu_node" type="imu_to_pos_node" output="screen">
+    <node pkg="imu_2_post" name="imu_node" type="imu_to_pos_node" output="screen">
 	<remap from="/IMU_data" to="/imu/data"/>
 	</node>
 	<node pkg="rviz" name="rviz_hi226" type="rviz" args="-d /home/nvidia/test_imu/src/imu_test/rviz/imu.rviz"/>
