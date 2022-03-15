@@ -1,5 +1,5 @@
 <launch>
 	<node pkg="serial_imu" name="HI226" type="serial_imu" />
-    <node pkg="imu_2_post" name="imu_node" type="imu_to_pos_node" output="screen"/>
+    <node pkg="imu_2_pos" name="imu_node" type="imu_to_pos_node" output="screen"/>
 	<node pkg="rviz" name="rviz_hi226" type="rviz" args="-d $(find imu_2_pos)/src/imu_2_pos/rviz/imu.rviz"/>
 </launch>
